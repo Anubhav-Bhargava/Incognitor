@@ -1,0 +1,21 @@
+{
+    "name": "Incognitor",
+    "version": "1.0",
+    "description": "Clean up your tab cache and read-on!!",
+    "permissions": ["browsingData", "tabs"],
+    
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 2,
+    "commands": {
+          "_execute_browser_action": {
+            "suggested_key": {
+              "windows": "Ctrl+I",
+              "mac": "Command+I",
+              "chromeos": "Ctrl+I",
+              "linux": "Ctrl+I"
+            }
+          }
+        }
+  }
