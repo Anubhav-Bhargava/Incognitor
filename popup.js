@@ -2,11 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
 
-      // var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
-      
-      //   var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
-
-
             chrome.browsingData.removeAppcache({ "since": 0 });
 
             chrome.browsingData.removeCache({ "since": 0 });
